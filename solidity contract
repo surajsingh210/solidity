@@ -1,0 +1,20 @@
+This Solidity contract, MyToken, implements a basic token system with minting and burning functionalities. Here's a breakdown of the contract:
+
+Public Variables:
+
+tokenName: A string representing the name of the token ("META").
+tokenAbbrv: A string representing the token's abbreviation ("MTA").
+totalSupply: A uint representing the total number of tokens in circulation, initially set to 0.
+Mapping:
+
+balances: A mapping that associates addresses with their token balances.
+Mint Function:
+
+The mint function allows increasing the totalSupply of the token and adding tokens to a specific address's balance.
+The function takes an _address (recipient) and _value (number of tokens to mint) as arguments, adding the _value to both totalSupply and the recipient's balance.
+Burn Function:
+
+The burn function allows reducing the totalSupply and a specific address's balance.
+It checks that the _address has enough tokens to burn. If so, it subtracts the specified _value from both the address’s balance and the totalSupply.
+If the balance is insufficient, the transaction is reverted with an error message.
+This is a simple implementation of a token, without more advanced features like transfer functions, allowances, or ownership control.
