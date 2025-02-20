@@ -37,7 +37,6 @@ npx hardhat help
 
 ## Authors
 + Name: Suraj Singh
-+ MetacrafterID: 22BCS16950
 + Email id: surajsingh95697@gmail.com
 
 
